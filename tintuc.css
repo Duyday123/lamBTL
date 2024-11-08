@@ -1,0 +1,113 @@
+.head {
+    background-color:greenyellow;
+    height: 80px;
+}
+.gioithieu{
+    display: flex;
+    background-color: antiquewhite;
+    margin-top: 30px;
+    height: 550px;
+    
+    
+}
+.left {
+    background-color: red;
+    margin-left: 250px;
+    width: 55%;
+    margin-right: 10px;
+}
+.chuyen {
+    height: 70%;
+    background-color: rgb(191, 227, 192);
+    display: flex;
+}
+
+.list {
+    display: flex;
+    height: 30%;
+    justify-content: center;
+}
+.item {
+    width: 25%;
+    background-color: blueviolet;
+    margin: 10px;
+
+}
+.right {
+    background-color: aqua;
+    width: 21%;
+}
+.giua {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    height: 300px;
+    margin-left: 245px;
+    margin-right: 105px;
+}
+.listgiua {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50%;
+    margin: 10px;
+}
+.itemgiua {
+    width: 53%;
+    margin: 5px;
+    background-color: yellowgreen;
+    height: 140px;
+    
+}
+.giua2 {
+    margin-top: 10px;
+    background-color: rgb(216, 153, 216);
+    height: 1110px;
+}
+.ds {
+    height: 150px;
+    margin-left: 250px;
+    background-color: blueviolet;
+    margin-top: 10px;
+    margin-right: 120px;
+    display: flex;
+}
+.img-ds {
+    height: 150px;
+    
+}
+.cuoi {
+    margin-top: 20px;
+    background-color: bisque;
+    height: 500px;
+    display: flex;
+}
+.cuoitrai {
+    background-color: rosybrown;
+    margin-left: 250px;
+    width: 55%;
+    margin-right: 10px;
+    height: 500px;
+}
+.list-cuoi {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    
+}
+.cuoi1 {
+    background-color: darkcyan;
+    width: 25%;
+    margin: 10px;
+   
+}
+.cuoiphai{
+    background-color: tomato;
+    width: 19.9%;
+    height: 500px;
+}
+.ket {
+    background-color: blue;
+    margin-top: 25px;
+    height: 300px;
+}
+
