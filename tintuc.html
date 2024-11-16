@@ -5,27 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tintuc.css">
+    <script src="tintuc.js"></script>
 </head>
 <body>
     <div class="head">
-        xin chào
+        <div class="logo">
+           <img src="anh/logo.png" height="20%" width="100px">
+            <div class="subtitle">Báo thế giới
+                <br><span> tin tức mọi nơi</span>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Nhập nội dung tìm kiếm">
+            <button>
+                <img src="https://img.icons8.com/material-rounded/24/000000/search.png" alt="Search">
+            </button>
+        </div>
+
+        <div class="icons">
+            <img class="icon" onclick="openLogin()" src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Icon">
+           
+        </div>
+        <div id="overlay" class="overlay"></div>
+        <div id="login-form" class="login-form" >
+            
+            <h2>Đăng nhập</h2>
+            <span class="close-btn" onclick="closeLogin()">×</span>
+            <form  method="POST" >
+                <div class="form-control">
+                    Tài Khoản : 
+                    <input type="text" placeholder="Tên Đăng Nhập">
+                </div>
+                <div class="form-control">
+                    Mật Khẩu : 
+                    <input type="password" placeholder="Mật khẩu">
+                </div>
+                <div>
+                    <input class="submit"type="submit" value="Đăng Nhập">
+                </div>
+                <div class="signup">Bạn chưa có tài khoản?<a href="https://www.google.com">Đăng ký</a></div>
+            </form>
+        </div>
     </div>
+    <div class="tieude">
+        <div class="navbar">
+            <ul>
+              <li class="active" ><a href="thegioi.html" target="_blank">THẾ GIỚI</a></li>
+              <li>BÓNG ĐÁ</li>
+              <li>GIÁO DỤC</li>
+              <li>GAME</li>
+            </ul>
+            <div class="hashtag-container">
+              <button># Năng lượng tích cực</button>
+              <button># Khám phá Việt Nam</button>
+              <button># Khám phá Thế Giới</button>
+            </div>
+            <div class="notification">
+              <span class="icon">≡</span>
+           
+            </div>
+          </div>
+    </div>
+    <!-- vũ an duy -->
     <div class="gioithieu">
         <div class="left">
             <div class="chuyen">
-                <img class="img" src="anh/370337239_618238643758063_3666608942410061431_n.jpg" width="100%">
+                <img class="img" src="anh/tieude.jpg" width="100%" height="90%">   
+                <p class="caption">4 nhóm vấn đề 'nóng' Quốc hội chất vấn Bộ trưởng Y tế Đào Hồng Lan</p>
             </div>
             <div class="list">
-                <div class="item"><img src="anh/images.png" height="100%" width="100%"></div>
-                <div class="item">2</div>
-                <div class="item">3</div>
-                <div class="item">4</div>
+                <div class="item">
+                    <img src="anh/yud01.jpg" height="100%" width="100%">
+                    <p>Bão số 7 giật cấp 10 đang trên vùng biển phía Tây Bắc quần đảo Hoàng Sa</p>
+                </div>
+                <div class="item">
+                    <img src="anh/yud02.jpg" height="100%" width="100%">
+                    <p>Ông Trump yêu cầu quyền bổ nhiệm nội các không qua phê chuẩn của Thượng viện</p>
+                </div>
+                <div class="item">
+                    <img src="anh/yud03.jpg" height="100%" width="100%">
+                    <p>Xác định HLV đầu tiên mất việc ở V.League 2024-2025</p>
+                </div>
             </div>
         </div>
         <div class="right">
-            <!-- phần này tạm để trống đã -->
+            <div class="Img2">
+                <div class="Img2-des">
+                    <img class="right1" src="anh/yud04.jpg" width="130px" height="100px">
+                </div>
+                <div><b>
+                    <a>Tổng Bí thư Tô Lâm chủ trì Phiên họp thứ ba của Tiểu ban Văn kiện Đại hội XIV của Đảng</a>
+                    <br>
+                    <a href="https://baothegioi.com" style="color: #ff5722; font-size: 10px;">Baothegioi.com</a>
+                    </b>
+                </div>
+            </div>
+            <hr style="border: 1px solid lightgray;">
+            <div class="Img2">
+                <div class="Img2-des">
+                    <img class="right1" src="anh/yud04.jpg" width="130px" height="100px">
+                </div>
+                <div><b>
+                    <a>Tổng Bí thư Tô Lâm chủ trì Phiên họp thứ ba của Tiểu ban Văn kiện Đại hội XIV của Đảng</a>
+                    <br>
+                    <a href="https://baothegioi.com" style="color: #ff5722; font-size: 10px;">Baothegioi.com</a>
+                    </b>
+                </div>
+            </div>
+            <hr style="border: 1px solid lightgray;">
+            <div class="Img2">
+                <div class="Img2-des">
+                    <img class="right1" src="anh/yud04.jpg" width="130px" height="100px">
+                </div>
+                <div><b>
+                    <a>Tổng Bí thư Tô Lâm chủ trì Phiên họp thứ ba của Tiểu ban Văn kiện Đại hội XIV của Đảng</a>
+                    <br>
+                    <a href="https://baothegioi.com" style="color: #ff5722; font-size: 10px;">Baothegioi.com</a>
+                    </b>
+                </div>
+            </div>
+            <hr style="border: 1px solid lightgray;">
+            <div class="Img2">
+                <div class="Img2-des">
+                    <img class="right1" src="anh/yud04.jpg" width="130px" height="100px">
+                </div>
+                <div><b>
+                    <a>Tổng Bí thư Tô Lâm chủ trì Phiên họp thứ ba của Tiểu ban Văn kiện Đại hội XIV của Đảng</a>
+                    <br>
+                    <a href="https://baothegioi.com" style="color: #ff5722; font-size: 10px;">Baothegioi.com</a>
+                    </b>
+                </div>
+            </div>
+            <hr style="border: 1px solid lightgray;">
+            <div class="Img2">
+                <div class="Img2-des">
+                    <img class="right1" src="anh/yud04.jpg" width="130px" height="100px">
+                </div>
+                <div><b>
+                    <a>Tổng Bí thư Tô Lâm chủ trì Phiên họp thứ ba của Tiểu ban Văn kiện Đại hội XIV của Đảng</a>
+                    <br>
+                    <a href="https://baothegioi.com" style="color: #ff5722; font-size: 10px;">Baothegioi.com</a>
+                    </b>
+                </div>
+            </div>
+            <hr style="border: 1px solid lightgray;">
+            <div class="Img2">
+                <div class="Img2-des">
+                    <img class="right1" src="anh/yud04.jpg" width="130px" height="100px">
+                </div>
+                <div><b>
+                    <a>Tổng Bí thư Tô Lâm chủ trì Phiên họp thứ ba của Tiểu ban Văn kiện Đại hội XIV của Đảng</a>
+                    <br>
+                    <a href="https://baothegioi.com" style="color: #ff5722; font-size: 10px;">Baothegioi.com</a>
+                    </b>
+                </div>
+            </div>
+            
+            
         </div>
     </div>
+    <!-- Nguyễn Mạnh cười -->
     <div class="giua">
         <div class="listgiua">
             <div class="itemgiua">1</div>
@@ -41,85 +181,225 @@
             <div class="itemgiua">4</div>
         </div>
     </div>
+    <!-- Nguyễn Huy Mạnh -->
     <div class="giua2">
-        <div class="ds">
-            <div class="anhds">
-                <img class="img-ds" src="anh/images.png" >
+        <!-- bên trái -->
+        <div class="Trai">
+            <div class="ds">
+                <div class="anhds">
+                    <img class="img-ds" src="anh/Faker.png">
+                </div>
+                <div class="TieuDe">
+                    <h1>Faker tiếp tục làm nên lịch sử, nghi vấn T1 cũng có hệ "tâm linh"</h1>
+                    <br>
+                    Faker cùng T1 đã đến với CKTG 2024.
+                </div>
             </div>
-            <div>
-                12344567876543345678
+            <div class="ds">
+                <div class="anhds">
+                    <img class="img-ds" src="anh/Yak130.jpg">
+                </div>
+                <div class="TieuDe">
+                    <h1>Đưa máy bay Yak-130 ra khỏi rừng Vườn Quốc Gia Yok Đôn</h1>
+                    <br>
+                    Chiếc máy bay Yak-130 bị sự cố rơi ở Đắk Lắk đã được lực lượng chức năng đưa ra khỏi Vườn Quốc gia Yok
+                    Đôn và vận chuyển về tỉnh Khánh Hòa.
+                </div>
+            </div>
+            <div class="ds">
+                <div class="anhds">
+                    <img class="img-ds" src="anh/T1.png">
+                </div>
+                <div class="TieuDe">
+                    <h1>Lãnh đạo Riot ca tụng T1 và LCK nhưng lại khiến một khu vực lớn "nóng mắt"</h1>
+                    Những lời ca ngợi T1 và LCK của lãnh đạo Riot Games lại vô tình tạo ra "sóng gió" ở một khu vực lớn.
+                </div>
+            </div>
+            <div class="ds">
+                <div class="anhds">
+                    <img class="img-ds" src="anh/Chovy.jpg">
+                </div>
+                <div class="TieuDe">
+                    <h1>Lộ diện "đại gia" quyết tâm chiêu mộ Chovy để "phục hận" ở mùa giải mới</h1>
+                    Chovy đang được một đội tuyển "lắm tiền nhiều của" theo đuổi cho kế hoạch "siêu đội tuyển" ở mùa giải
+                    2025
+                </div>
+            </div>
+            <div class="ds">
+                <div class="anhds">
+                    <img class="img-ds" src="anh/trump.png">
+                </div>
+                <div class="TieuDe">
+                    <h1>Lãnh đạo Việt Nam chúc mừng ông Trump đắc cử tổng thống Mỹ</h1>
+                    Tổng Bí thư Tô Lâm, Chủ tịch nước Lương Cường và Thủ tướng Phạm Minh Chính
+                    đã gửi điện chúc mừng ông Trump được bầu làm tổng thống, nhấn mạnh Mỹ là đối tác có tầm quan trọng chiến
+                    lược.
+                </div>
+            </div>
+            <div class="ds">
+                <div class="anhds">
+                    <img class="img-ds" src="anh/Harris.png">
+                </div>
+                <div class="TieuDe">
+                    <h1>Bà Harris gánh nợ sau chuỗi sự kiện tranh cử toàn ngôi sao hạng A</h1>
+                    Cuộc bầu cử Tổng thống Mỹ 2024 khép lại với chiến thắng thuộc về ông Donald Trump và bà Kamala Harris
+                    thất bại.
+                </div>
+            </div>
+            <div class="ds">
+                <div class="anhds">
+                    <img class="img-ds" src="anh/PSG.jpg">
+                </div>
+                <div class="TieuDe">
+                    <h1>Sao Hàn Quốc chói sáng trong chiến thắng của PSG</h1>
+                    PhápTiền đạo Lee Kang-in góp hai bàn và một pha kiến tạo trong trận PSG thắng Angers 4-2, ở vòng 11
+                    Ligue 1 tối 9/11.
+                </div>
             </div>
         </div>
-        <div class="ds">
-            <div class="anhds">
-                <img class="img-ds" src="anh/images.png" >
+        <!-- Bên phải -->
+        <div class="phai">
+            <div class="KhungPhai">
+                <h2 class="DeMuc">Tin Nổi Bật</h2>
+                <select class="luaChon">
+                    <option>Nổi Bật</option>
+                    <option>Thể Thao</option>
+                    <option>Thế Giới</option>
+                    <option>Giáo Dục</option>
+                </select>
+                <div class="news-item">
+                    <img src="anh/tbt.jpg">
+                    <p>Công an TP HCM bắt Trần Khắc Đức</p>
+                    <span class="Nguon">NGƯỜI LAO ĐỘNG</span>
+                </div>
+                <div class="news-item">
+                    <img src="anh/LuongCuong.png">
+                    <p>Chủ tịch nước Lương Cường dâng hoa tại Tượng đài Chủ tịch Hồ Chí Minh ở Chile</p>
+                    <span class="Nguon">VIETNAMPLUS</span>
+                </div>
+                <div class="news-item">
+                    <img src="anh/VietNam-Indo.png">
+                    <p>Tuyển futsal Việt Nam lỡ ngôi vô địch Đông Nam Á</p>
+                    <span class="Nguon">Thể Thao</span>
+                </div>
+                <div class="news-item">
+                    <img src="anh/trump2.png">
+                    <p>Tổng thống đắc cử Mỹ toàn thắng ở 7 bang chiến trường</p>
+                    <span class="Nguon">Thế Giới</span>
+                </div>
+                <div class="news-item">
+                    <img src="anh/antd-bao-so-7-1753.gif">
+                    <p>Liên hoàn ba cơn bão cùng xuất hiện, có ảnh hưởng ra sao đến đất liền Việt Nam?</p>
+                    <span class="Nguon">Thời Tiết</span>
+                </div>
+                <a href="https://baomoi.com/tin-dia-phuong/ho-chi-minh.epi" class="More">Xem thêm</a>
             </div>
             <div>
-                12344567876543345678
-            </div>
-        </div>
-        <div class="ds">
-            <div class="anhds">
-                <img class="img-ds" src="anh/images.png" >
-            </div>
-            <div>
-                12344567876543345678
-            </div>
-        </div>
-        <div class="ds">
-            <div class="anhds">
-                <img class="img-ds" src="anh/images.png" >
-            </div>
-            <div>
-                12344567876543345678
-            </div>
-        </div>
-        <div class="ds">
-            <div class="anhds">
-                <img class="img-ds" src="anh/images.png" >
-            </div>
-            <div>
-                12344567876543345678
-            </div>
-        </div>
-        <div class="ds">
-            <div class="anhds">
-                <img class="img-ds" src="anh/images.png" >
-            </div>
-            <div>
-                12344567876543345678
-            </div>
-        </div>
-        <div class="ds">
-            <div class="anhds">
-                <img class="img-ds" src="anh/images.png" >
-            </div>
-            <div>
-                12344567876543345678
+                <img class="anh" src="anh/logo.png">
             </div>
         </div>
     </div>
+    <!-- Nguyễn Danh Tiến -->
     <div class="cuoi">
         <div class="cuoitrai">
             <div class="list-cuoi">
-                <div class="cuoi1">1</div>
-                <div class="cuoi1">1</div>
-                <div class="cuoi1">1</div>
-                <div class="cuoi1">1</div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/chelsea-ra-gia-ban-nkunku-cho-mu-c50704369.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 1.png">
+                        <p>Chelsea ra giá bán Nkunku cho MU</p></a>
+                        
+                </div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/cho-amorim-bien-hojlund-thanh-manh-thu-ghi-ban-dang-so-c50700009.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 2.png">
+                        <p>Với Amorim, Hojlund hết 'vô hại'?</p></a>
+                    
+                </div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/top-10-ngoai-binh-ghi-ban-o-ngoai-hang-anh-salah-but-pha-c50703498.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 3.png">
+                        <p>Top 10 ngoại binh ghi bàn ở Ngoại hạng Anh: Salah bứt phá</p></a>
+                    
+                </div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/man-city-chot-tuong-lai-haaland-c50700208.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 4.png">
+                        <p>Man City chốt tương lai Haaland</p></a>
+                    
+                </div>
             </div>
             <div class="list-cuoi">
-                <div class="cuoi1">1</div>
-                <div class="cuoi1">1</div>
-                <div class="cuoi1">1</div>
-                <div class="cuoi1">1</div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/ronaldo-sap-roi-al-nassr-chuan-bi-cuoc-chuyen-nhuong-gay-soc-c50704348.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 5.png">
+                        <p>Ronaldo sắp rời Al Nassr, chuẩn bị cuộc chuyển nhượng gây sốc</p></a>
+                    
+                </div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/thanh-thuy-cho-thu-tuc-chia-tay-doi-chau-au-chua-chot-ben-do-moi-c50704364.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 6.png">
+                        <p>Thanh Thúy chờ thủ tục chia tay đội châu Âu, chưa chốt bến đỗ mới</p></a>
+                    
+                </div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/giai-dien-kinh-vdqg-2024-nguyen-thi-oanh-sap-co-hat-trick-hcv-them-2-ky-luc-bi-pha-c50704421.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 7.png">
+                        <p>Giải điền kinh VĐQG 2024: Nguyễn Thị Oanh sắp có hat-trick HCV, thêm 2 kỷ lục bị phá</p></a>
+                    
+                </div>
+                <div class="cuoi1">
+                    <a href="https://baomoi.com/khong-messi-tan-cuoc-vui-c50704243.epi">
+                        <img class="cuoi1-img" src="c:\Users\Admin\Pictures\Muc 8.png">
+                        <p>Không Messi, tàn cuộc vui</p></a>
+                    
+                </div>
             </div>  
         </div>
         <div class="cuoiphai">
-            <!-- phần này tạm trống -->
+            <div class="bang-xep-hang">
+               BẢNG XẾP HẠNG
+            </div>
+            <div class="row header">
+                <div>TT</div>
+                <div>Đội</div>
+                <div>Trận</div>
+                <div>HS</div>
+                <div>Điểm</div>
+            </div>
+            <div>
+                <div class="row"><div>1</div><div>Liverpool</div><div>11</div><div>15</div><div>28</div></div>
+                <div class="row"><div>2</div><div>Man City</div><div>11</div><div>9</div><div>23</div></div>
+                <div class="row"><div>3</div><div>Chelsea</div><div>11</div><div>8</div><div>19</div></div>
+                <div class="row"><div>4</div><div>Arsenal</div><div>11</div><div>6</div><div>19</div></div>
+                <div class="row"><div>5</div><div>NF</div><div>11</div><div>5</div><div>19</div></div>
+                <div class="row"><div>6</div><div>Brighton</div><div>11</div><div>4</div><div>19</div></div>
+                <div class="row"><div>7</div><div>Fulham</div><div>11</div><div>3</div><div>18</div></div>
+                <div class="row"><div>8</div><div>Newcastle</div><div>11</div><div>2</div><div>19</div></div>
+                <div class="row"><div>9</div><div>Aston Villa</div><div>11</div><div>0</div><div>19</div></div>
+                <div class="row"><div>10</div><div>Tottenham</div><div>11</div><div>10</div><div>16</div></div>
+            </div>
         </div>
     </div>
     <div class="ket">
         <!-- phần này tạm trống -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Liên hệ với chúng tôi</h3>
+                <p>Địa chỉ: 18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội</p>
+                <p>Email: cen27726@gmail.com</p>
+                <p>Số điện thoại: 0335 704 305</p>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+                
+                <div class="footer-bottom">
+                    &copy; 2024 BaoTheGioi.com | Bản quyền thuộc về BaoTheGioi.com
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
