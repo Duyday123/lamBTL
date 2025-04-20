@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: #f8f8f8;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  .nav-left{
+    margin-left: 50px;
+    margin-top: 8px;
+  }
+  .nav-left a {
+    margin-right: 60px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    
+  }
+  .nav-right{
+    margin-right: 40px;
+  }
+  .nav-right span,
+  .nav-right button {
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .search{
+    background-color: white;
+    padding: 0px 45px;   
+    font-size: 20px; 
+    border: none;            
+    outline: none;
+    cursor: pointer;  
+  }
+  
+  .logo {
+    background: #1f355f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+    
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: #f9f9f9;
+  }
+  
+  .product-image {
+    flex: 1 1 40%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .product-info {
+    flex: 1 1 60%;
+    padding: 20px;
+  }
+  
+  .product-info h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 1.5em;
+    color: #e63946;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .specs {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .specs li {
+    margin: 5px 0;
+  }
+  
+  .add-to-cart {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #007BFF;
+    color: white;
+  }
+  
